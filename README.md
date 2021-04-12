@@ -13,5 +13,5 @@ Layout is provided in [Figma](https://www.figma.com/file/nauiCBiwYgH09nwHm1mzA0/
 
 ### Components
 
-Slider: [Swiper](https://swiperjs.com/demos#default)  
-Modal: [Fancybox](https://www.fancyapps.com/fancybox/3/)
+- Slider: [Swiper](https://swiperjs.com/demos#default)
+- Modal: [Fancybox](https://www.fancyapps.com/fancybox/3/)
