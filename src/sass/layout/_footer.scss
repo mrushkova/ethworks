@@ -1,0 +1,41 @@
+.footer {
+  padding: 40px 44px;
+  background: linear-gradient(
+    180deg,
+    #fafbff 0%,
+    #eff1f9 41.68%,
+    #e9ecf6 49.59%,
+    #ced3e8 93.91%
+  );
+
+  &__contact-box {
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-footer;
+    margin-bottom: 16px;
+  }
+
+  &__email {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: $color-tertiary;
+  }
+
+  &__btn {
+    padding: 12px 37px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &__nav {
+    margin: 60px auto 0;
+    max-width: 810px;
+    color: $color-text;
+  }
+}

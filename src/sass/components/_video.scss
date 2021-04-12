@@ -1,0 +1,22 @@
+.video {
+  position: relative;
+
+  &__btn {
+    content: '';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 63px;
+    height: 63px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+
+  &__cover {
+    object-fit: cover;
+    border-radius: 6px;
+  }
+}

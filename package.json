@@ -1,0 +1,48 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "ethworks test assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "start": "gulp start",
+    "webp": "gulp webp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrushkova/project.git"
+  },
+  "author": "Maria Rushkova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrushkova/project/issues"
+  },
+  "homepage": "https://github.com/mrushkova/project#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "autoprefixer": "9.8.x",
+    "browser-sync": "2.26.x",
+    "browserify": "^16.5.2",
+    "del": "^5.1.0",
+    "gulp": "4.0.x",
+    "gulp-babel": "^8.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-inline-source": "^4.0.0",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "4.1.x",
+    "gulp-sourcemaps": "2.6.x",
+    "live-server": "^1.2.1",
+    "posthtml-include": "^1.4.3"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ]
+}

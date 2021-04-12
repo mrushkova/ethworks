@@ -1,0 +1,33 @@
+.modal {
+  display: none;
+  width: 100%;
+  max-width: 630px;
+  max-height: 744px;
+  padding: 72px 0 50px;
+  text-align: justify;
+  border-radius: 20px;
+  box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.25);
+  background-color: $color-white;
+
+  &__content {
+    overflow: auto;
+    max-height: 515px;
+    padding: 0 30px;
+  }
+}
+
+.fancybox-bg {
+  background: $color-dark;
+  opacity: 0.5;
+}
+
+.fancybox-close-small {
+  margin-top: 22px;
+  margin-right: 22px;
+  outline: none;
+}
+
+.fancybox-button svg {
+  border-radius: 50%;
+  border: 1px solid currentColor;
+}

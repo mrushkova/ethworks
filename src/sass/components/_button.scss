@@ -1,0 +1,40 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: $color-hover;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &--blue {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    background-color: $color-secondary;
+    color: $color-white;
+    box-shadow: 0px 12px 44px rgba(56, 165, 219, 0.6);
+    border-radius: 23px;
+  }
+
+  &--social {
+    width: 43px;
+    height: 23px;
+    border: 1px solid rgba(#7f8b98, 0.3);
+    background-color: $color-white;
+    border-radius: 3px;
+  }
+}
