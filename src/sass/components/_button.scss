@@ -1,15 +1,11 @@
 .btn {
-  &,
-  &:link,
-  &:visited {
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    border: none;
-    box-sizing: border-box;
-    transition: all 0.2s;
-    cursor: pointer;
-  }
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  box-sizing: border-box;
+  transition: all 0.2s;
+  cursor: pointer;
 
   &:hover {
     background-color: $color-hover;

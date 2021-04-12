@@ -1,8 +1,7 @@
 .header {
-  min-height: 980px;
-  display: flex;
-  flex: 1;
+  min-height: 908px;
   position: relative;
+  display: flex;
   background-image: url(../img/mask.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,10 +12,8 @@
   &::before {
     content: '';
     position: absolute;
-    width: 1363px;
-    height: 734px;
-    left: 0;
-    top: 0px;
+    width: 1264px;
+    height: 617px;
     background-image: url(../img/shape1.svg);
     z-index: 2;
   }
@@ -24,40 +21,44 @@
   &::after {
     content: '';
     position: absolute;
-    width: 839px;
-    height: 1025px;
-    left: 0;
-    top: 0px;
+    width: 694px;
+    height: 829px;
     background-image: url(../img/shape2.svg);
-    background-position: right;
     z-index: 1;
   }
 
   &__wrapper {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     align-items: flex-start;
-    padding-top: 196px;
+    padding: 175px 40px 0 137px;
     z-index: 4;
 
-    &::before {
-      content: '';
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      left: 50%;
-      bottom: 130px;
-      transform: translateX(-50%);
-      background-image: url(../img/arrow.svg);
-      z-index: 4;
+    @include respond(desktop) {
+      flex: 1 0 auto;
+      justify-content: space-around;
     }
   }
 
   &__info {
     display: flex;
     flex-direction: column;
-    max-width: 570px;
+    position: relative;
+    width: 570px;
     padding-top: 80px;
     color: $color-white;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      right: 0;
+      bottom: -125px;
+      // transform: translate(-50%, -50%);
+      background-image: url(../img/arrow.svg);
+      z-index: 4;
+    }
   }
 
   &__heading {
@@ -87,7 +88,7 @@
   }
 
   &__video {
+    margin: 22px;
     max-width: 544px;
-    margin-right: -75px;
   }
 }

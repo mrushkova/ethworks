@@ -1,28 +1,30 @@
 @mixin respond($breakpoint) {
-  //600px 600/16px default font size
   @if $breakpoint == phone {
-    @media (max-width: 37.5em) {
+    @media (max-width: 468px) {
       @content;
     }
   }
 
-  //900px
-  @if $breakpoint == tab-port {
-    @media (max-width: 56.25em) {
+  @if $breakpoint == tab {
+    @media (max-width: 768px) {
       @content;
     }
   }
 
-  //1200px
   @if $breakpoint == tab-land {
-    @media (max-width: 75em) {
+    @media (max-width: 1024px) {
       @content;
     }
   }
 
-  //1800px
-  @if $breakpoint == big-desktop {
-    @media (min-width: 112.5em) {
+  @if $breakpoint == laptop {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media (min-width: 1440px) {
       @content;
     }
   }

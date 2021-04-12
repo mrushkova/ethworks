@@ -1,0 +1,26 @@
+.swiper-container {
+  display: none;
+  margin: 0;
+
+  @include respond(tab-land) {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    position: static;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.swiper-slide {
+  width: 270px !important;
+}
+
+.swiper-pagination {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet-active {
+  background: $color-form;
+  margin: 0 8px;
+}
