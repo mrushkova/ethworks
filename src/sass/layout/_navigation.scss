@@ -8,12 +8,26 @@
   &__nav {
     max-width: 217px;
   }
+
+  &__logo {
+    @include respond(phone) {
+      width: 55px;
+      height: 22px;
+    }
+  }
 }
 
 .nav {
   &__links {
     display: flex;
     list-style: none;
+
+    &--footer {
+      @include respond(phone) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
   }
 
   &__item {
@@ -28,6 +42,19 @@
 
       &:not(:last-child) {
         border-right: 2px solid #9ca4c7;
+
+        @include respond(tab) {
+          border: none;
+        }
+      }
+
+      @include respond(tab) {
+        font-size: 12px;
+        line-height: 24px;
+      }
+
+      @include respond(phone) {
+        width: 136px;
       }
     }
   }
@@ -44,6 +71,13 @@
 
     &--top {
       color: $color-primary;
+    }
+
+    &--footer {
+      @include respond(tab) {
+        font-size: 12px;
+        line-height: 24px;
+      }
     }
 
     &:before {

@@ -14,12 +14,17 @@
     background-size: auto;
   }
 
+  @include respond(tab-land) {
+    min-height: 700px;
+  }
+
   &::before {
     content: '';
     position: absolute;
     width: 1264px;
     height: 617px;
     background-image: url(../img/shape1.svg);
+    background-repeat: no-repeat;
     z-index: 2;
   }
 
@@ -29,7 +34,13 @@
     width: 694px;
     height: 829px;
     background-image: url(../img/shape2.svg);
+    background-repeat: no-repeat;
     z-index: 1;
+
+    @include respond(phone) {
+      bottom: 20%;
+      right: 0;
+    }
   }
 
   &__wrapper {
@@ -49,6 +60,10 @@
       padding: 175px 0 0;
       margin: 0 auto;
     }
+
+    @include respond(phone) {
+      padding: 128px 16px 0;
+    }
   }
 
   &__info {
@@ -62,6 +77,11 @@
     @include respond(tab-land) {
       margin-bottom: 345px;
       padding-top: 0;
+    }
+
+    @include respond(phone) {
+      width: auto;
+      margin-bottom: 142px;
     }
 
     &::before {
@@ -87,6 +107,11 @@
     line-height: 56px;
     letter-spacing: 0.2px;
     margin-bottom: 74px;
+
+    @include respond(phone) {
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 
   &__subscribe {
@@ -98,6 +123,12 @@
     right: 0;
     padding: 11px 37px;
     z-index: 4;
+
+    @include respond(phone) {
+      position: static;
+      width: 100%;
+      margin-top: 16px;
+    }
   }
 
   &__label {
@@ -105,6 +136,11 @@
     line-height: 26px;
     margin-bottom: 18px;
     opacity: 0.7;
+
+    @include respond(phone) {
+      font-size: 14px;
+      line-height: 26px;
+    }
   }
 
   &__video {

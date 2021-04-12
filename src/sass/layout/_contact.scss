@@ -6,6 +6,10 @@
   background-color: $color-dark;
   color: $color-white;
 
+  @include respond(tab) {
+    padding: 88px 16px 78px;
+  }
+
   &__heading {
     display: block;
     font-weight: 400;
@@ -33,6 +37,11 @@
     padding: 84px 41px 26px;
     background-color: $color-form;
     border-radius: 13px;
+
+    @include respond(phone) {
+      width: 100%;
+      padding: 84px 16px 26px;
+    }
   }
 
   &__input {

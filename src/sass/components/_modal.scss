@@ -13,6 +13,12 @@
     overflow: auto;
     max-height: 515px;
     padding: 0 30px;
+
+    @include respond(phone) {
+      max-height: 100%;
+      overflow: auto;
+      text-align: justify;
+    }
   }
 }
 

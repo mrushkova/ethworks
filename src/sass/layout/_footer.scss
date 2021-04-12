@@ -1,5 +1,6 @@
 .footer {
-  padding: 40px 44px;
+  position: relative;
+  padding-bottom: 44px;
   background: linear-gradient(
     180deg,
     #fafbff 0%,
@@ -8,12 +9,45 @@
     #ced3e8 93.91%
   );
 
-  @include respond(laptop) {
-    padding: 40px 16px;
+  @include respond(tab) {
+    background: $color-white;
+    padding-bottom: 20px;
   }
 
+  &__wrapper {
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+    @include respond(tab) {
+      background: linear-gradient(
+        180deg,
+        #fafbff 0%,
+        #eff1f9 41.68%,
+        #e9ecf6 49.59%,
+        #ced3e8 93.91%
+      );
+      padding-bottom: 32px;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+      padding-top: 70px;
+    }
+  }
+
+  &__logo {
+    @include respond(phone) {
+      position: absolute;
+      left: 16px;
+      top: 32px;
+    }
+  }
   &__contact-box {
     text-align: center;
+
+    @include respond(phone) {
+      margin-bottom: 40px;
+    }
   }
 
   &__text {
@@ -38,8 +72,12 @@
   }
 
   &__nav {
-    margin: 60px auto 0;
+    margin: 0 auto;
     max-width: 810px;
     color: $color-text;
+
+    @include respond(tab) {
+      padding-top: 16px;
+    }
   }
 }
