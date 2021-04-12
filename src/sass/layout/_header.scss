@@ -9,6 +9,11 @@
   overflow: hidden;
   z-index: 3;
 
+  @include respond(tab-land) {
+    background-position: left top;
+    background-size: auto;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -38,6 +43,12 @@
       flex: 1 0 auto;
       justify-content: space-around;
     }
+
+    @include respond(tab-land) {
+      flex-direction: column;
+      padding: 175px 0 0;
+      margin: 0 auto;
+    }
   }
 
   &__info {
@@ -48,6 +59,11 @@
     padding-top: 80px;
     color: $color-white;
 
+    @include respond(tab-land) {
+      margin-bottom: 345px;
+      padding-top: 0;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -55,9 +71,13 @@
       height: 60px;
       right: 0;
       bottom: -125px;
-      // transform: translate(-50%, -50%);
       background-image: url(../img/arrow.svg);
       z-index: 4;
+
+      @include respond(tab-land) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 

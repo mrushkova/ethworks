@@ -8,6 +8,10 @@
     #ced3e8 93.91%
   );
 
+  @include respond(laptop) {
+    padding: 40px 16px;
+  }
+
   &__contact-box {
     text-align: center;
   }

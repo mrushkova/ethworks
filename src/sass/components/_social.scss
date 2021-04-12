@@ -8,6 +8,10 @@
   height: 92px;
   z-index: 10;
 
+  @include respond(tab-land) {
+    right: 16px;
+  }
+
   &__btn {
     width: 40px;
     height: 40px;
