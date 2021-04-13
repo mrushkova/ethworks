@@ -4,12 +4,13 @@ Layout is provided in [Figma](https://www.figma.com/file/nauiCBiwYgH09nwHm1mzA0/
 
 ## Technologies
 
-- HTML5, CSS3, JavaScript(ES6)
+- HTML5, CSS3, JavaScript
 - Methodology: BEM
 - Preprocessor: SCSS
 - Automation tool: Gulp
 - Cross-browser compatibility: Chrome, Firefox, Safari, Edge, Internet Explorer 11
-- RWD
+- RWD: mobile, tablet and desktop versions
+- Graphic: retinized images, svg sprite
 
 ### Components
 
